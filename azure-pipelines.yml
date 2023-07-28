@@ -86,7 +86,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: '604c544a-8bf3-4f46-b121-bd53a1b8d512'
+              azureSubscription: 'Pay-As-You-Go(604c544a-8bf3-4f46-b121-bd53a1b8d512)'
               appType: 'webAppLinux'
               appName: '$(WebAppNameDev)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
@@ -110,7 +110,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: '604c544a-8bf3-4f46-b121-bd53a1b8d512'
+              azureSubscription: 'Pay-As-You-Go(604c544a-8bf3-4f46-b121-bd53a1b8d512)'
               appType: 'webAppLinux'
               appName: '$(WebAppNameDev)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
